@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+</head>
+<body>
+    
+    {% load menu_tags %}
+
+    
+    <nav>
+        {% draw_menu 'main_menu' %}
+    </nav>
+
+    <div class="content">
+        {% block content %}
+       
+        {% endblock %}
+    </div>
+</body>
+</html>
